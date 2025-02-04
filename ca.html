@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>光与影：光驱烟霾，影塑劝诫</title>
+  <style>
+    /* 重置基础样式 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .nav-logo {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .nav-menu {
+      list-style: none;
+      display: flex;
+    }
+    .nav-menu li {
+      margin-left: 20px;
+    }
+    .nav-menu a {
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 12px;
+      transition: background 0.3s ease;
+    }
+    .nav-menu a:hover {
+      background: #555;
+      border-radius: 4px;
+    }
+    main {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 40px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      margin-bottom: 10px;
+      color: #222;
+    }
+    .quote {
+      font-style: italic;
+      margin-bottom: 20px;
+      color: #555;
+    }
+    .video-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto 20px;
+    }
+    .video-container video {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 1px solid #ccc;
+    }
+    /* 表单样式 */
+    form {
+      margin-top: 20px;
+    }
+    form textarea {
+      width: 100%;
+      min-height: 80px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+      font-size: 1em;
+    }
+    form button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    form button:hover {
+      background: #555;
+    }
+    /* 留言展示区 */
+    #feedbackMessages, #testimonialMessages {
+      margin-top: 20px;
+      padding: 10px;
+      border-top: 1px solid #ddd;
+    }
+    #feedbackMessages p, #testimonialMessages p {
+      padding: 8px 0;
+      border-bottom: 1px dashed #ddd;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+    /* 动态新闻部分 */
+    #newsList article {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    #loadMoreNews {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    #loadMoreNews:hover {
+      background: #555;
+    }
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-menu {
+        flex-direction: column;
+        width: 100%;
+      }
+      .nav-menu li {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 头部及导航 -->
+  <header>
+    <nav>
+      <div class="nav-logo">光与影控烟项目</div>
+      <ul class="nav-menu">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#microfilm">“光驱烟霾，影塑劝诫”</a></li>
+        <li><a href="#breathing">呼吸的两界</a></li>
+        <li><a href="#news">动态新闻</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 主体内容 -->
+  <main>
+    <!-- 首页 -->
+    <section id="home">
+      <h1>光与影：“光”驱“烟霾”，“影”塑劝诫</h1>
+      <p class="quote">吸烟者的独白：曾以为香烟只是消遣，如今才明白它带来的不仅是烟雾，还有无法挽回的伤害……</p>
+      <div class="video-container">
+        <!-- 视频预告（请将 src 替换为实际视频文件或链接） -->
+        <video controls>
+          <source src="your-video.mp4" type="video/mp4">
+          您的浏览器不支持 video 标签。
+        </video>
+      </div>
+    </section>
+
+    <!-- 二级页面：微电影播放与互动 -->
+    <section id="microfilm">
+      <h2>“光驱烟霾，影塑劝诫”</h2>
+      <div class="video-container">
+        <!-- 微电影视频播放 -->
+        <video controls>
+          <source src="microfilm.mp4" type="video/mp4">
+          您的浏览器不支持 video 标签。
+        </video>
+      </div>
+      <div class="interactive">
+        <h3>参与互动</h3>
+        <form id="feedbackForm">
+          <textarea placeholder="留下您的看法与感受..." required></textarea>
+          <button type="submit">提交反馈</button>
+        </form>
+        <div id="feedbackMessages">
+          <!-- 用户提交的反馈会显示在这里 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 二级页面：呼吸的两界 -->
+    <section id="breathing">
+      <h2>呼吸的两界</h2>
+      <div class="stats">
+        <h3>统计数据</h3>
+        <ul>
+          <li>吸烟人数：XXXX</li>
+          <li>烟草相关疾病统计：XXXX</li>
+          <!-- 根据实际数据进行扩充 -->
+        </ul>
+      </div>
+      <div class="testimonials">
+        <h3>烟民心声</h3>
+        <form id="testimonialForm">
+          <textarea placeholder="分享您的故事..." required></textarea>
+          <button type="submit">提交留言</button>
+        </form>
+        <div id="testimonialMessages">
+          <!-- 用户留言展示区 -->
+        </div>
+      </div>
+      <div class="health-info">
+        <h3>吸烟危害与戒烟益处</h3>
+        <p>吸烟不仅危害个人健康，更影响周围亲友的生活；而戒烟带来的好处则在于呼吸更自由、生活更健康……</p>
+      </div>
+    </section>
+
+    <!-- 二级页面：动态新闻 -->
+    <section id="news">
+      <h2>动态新闻</h2>
+      <div id="newsList" class="news-list">
+        <!-- 动态新闻将由 JavaScript 加载 -->
+      </div>
+      <button id="loadMoreNews">加载更多新闻</button>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer>
+    <p>&copy; 2025 光与影控烟项目</p>
+  </footer>
+
+  <!-- JavaScript 部分 -->
+  <script>
+    // 处理“光驱烟霾，影塑劝诫”区的用户反馈提交
+    document.getElementById("feedbackForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const textarea = this.querySelector("textarea");
+      const message = textarea.value.trim();
+      if (message) {
+        const feedbackMessages = document.getElementById("feedbackMessages");
+        const p = document.createElement("p");
+        p.textContent = message;
+        feedbackMessages.appendChild(p);
+        textarea.value = "";
+      }
+    });
+
+    // 处理“烟民心声”留言提交
+    document.getElementById("testimonialForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const textarea = this.querySelector("textarea");
+      const message = textarea.value.trim();
+      if (message) {
+        const testimonialMessages = document.getElementById("testimonialMessages");
+        const p = document.createElement("p");
+        p.textContent = message;
+        testimonialMessages.appendChild(p);
+        textarea.value = "";
+      }
+    });
+
+    // 动态新闻逻辑
+    const newsData = [
+      {
+        type: "政策更新",
+        title: "政策更新标题",
+        content: "这里是最新政策的简介内容，帮助公众了解控烟相关的新举措……",
+        link: "policy-link.html"
+      },
+      {
+        type: "新闻更新",
+        title: "新闻更新标题",
+        content: "这里是相关新闻的简介内容，报道控烟相关的社会动态……",
+        link: "news-link.html"
+      }
+      // 如有更多新闻，可在此数组中继续添加对象
+    ];
+
+    let currentNewsIndex = 0;
+    const newsPerPage = 2; // 每次加载两条新闻
+
+    function loadNews() {
+      const newsList = document.getElementById("newsList");
+      for (let i = currentNewsIndex; i < currentNewsIndex + newsPerPage && i < newsData.length; i++) {
+        const newsItem = newsData[i];
+        const article = document.createElement("article");
+        article.innerHTML = `
+          <h3>${newsItem.title}</h3>
+          <p>${newsItem.content}</p>
+          <a href="${newsItem.link}">了解更多</a>
+        `;
+        newsList.appendChild(article);
+      }
+      currentNewsIndex += newsPerPage;
+      if (currentNewsIndex >= newsData.length) {
+        document.getElementById("loadMoreNews").style.display = "none";
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      loadNews();
+      document.getElementById("loadMoreNews").addEventListener("click", loadNews);
+    });
+  </script>
+</body>
+</html>
